@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/WEB-INF/views/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />  
+    </definition>  
+    <definition name="homepage" extends="base.definition">  
+        <put-attribute name="title" value="this is homepage" />  
+        <put-attribute name="body" value="/WEB-INF/views/homepage.jsp" />  
+    </definition>
+    <definition name="aboutus" extends="base.definition">  
+        <put-attribute name="title" value="this is aboutus page" />  
+        <put-attribute name="body" value="/WEB-INF/views/aboutus.jsp" />  
+    </definition>
+    <definition name="contactus" extends="base.definition">  
+        <put-attribute name="title" value="this is contactus" />  
+        <put-attribute name="body" value="/WEB-INF/views/contactus.jsp" />  
+    </definition>
+    <definition name="pdp" extends="base.definition">  
+        <put-attribute name="title" value="this is pdp" />  
+        <put-attribute name="body" value="/WEB-INF/views/pdp.jsp" />  
+    </definition>
+    <definition name="checkout" extends="base.definition">  
+        <put-attribute name="title" value="this is checkout page" />  
+        <put-attribute name="body" value="/WEB-INF/views/checkout.jsp" />  
+    </definition>
+    <definition name="emptycart" extends="base.definition">  
+        <put-attribute name="title" value="this is emptycart page" />  
+        <put-attribute name="body" value="/WEB-INF/views/emptycart.jsp" />  
+    </definition> 
+      <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="This is homepage" />  
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />  
+    </definition>   
+    <definition name="cart" extends="base.definition">  
+        <put-attribute name="title" value="this is cart page" />  
+        <put-attribute name="body" value="/WEB-INF/views/cart.jsp" />  
+    </definition>   
+    <definition name="profile" extends="base.definition">  
+        <put-attribute name="title" value="this is profile page" />  
+        <put-attribute name="body" value="/WEB-INF/views/profile.jsp" />  
+    </definition> 
+    <definition name="plp" extends="base.definition">  
+        <put-attribute name="title" value="this is plp page" />  
+        <put-attribute name="body" value="/WEB-INF/views/plp.jsp" />  
+    </definition> 
+    <definition name="orders" extends="base.definition">  
+        <put-attribute name="title" value="this is Orders page" />  
+        <put-attribute name="body" value="/WEB-INF/views/orders.jsp" />  
+    </definition>  
+         <definition name="allProducts" extends="base.definition">  
+        <put-attribute name="title" value="this is Products page" />  
+        <put-attribute name="body" value="/WEB-INF/views/allProducts.jsp" />  
+    </definition>  
+  
+</tiles-definitions>   

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernet</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Pintu@123</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>  
+		
+		<mapping class="com.first.Student"/>
+		<mapping class="com.first.Address"/>
+		
+		<mapping class="com.onetoonemaping.Question"/>
+		<mapping class="com.onetoonemaping.Answer"/>
+		
+		<mapping class="com.onetomeny.Account"/>
+		<mapping class="com.onetomeny.Employee"/>
+		
+		<mapping class="com.menytomeny.Emp"/>
+		<mapping class="com.menytomeny.Project"/>
+		
+		<mapping class="com.caching.StudentDetails"/>
+		
+	</session-factory>
+</hibernate-configuration>
